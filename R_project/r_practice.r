@@ -113,3 +113,19 @@ cluster_result$size
 
 cluster_result$cluster
 
+#### Plot clustered observationsfor Sepal.Length and Sepal.Width
+par(mfrow=c(1,1))
+
+plot(df2[c(1,2)], col= cluster_result$cluster) #this shows how SL and SW are distributed
+
+plot(df2[c(1,2)], col=df1)
+class(cluster_result$cluster)
+cluster_result$
+
+######################################################
+#plotting the cluster analysis using GGplot
+
+ggplot(data = df2, aes(x = Sepal.Length, y = Sepal.Width)) +
+  geom_point(aes(colour = as.factor(cluster_result$cluster)))
+#theme(legend.position = "top")
+
