@@ -127,5 +127,3 @@ cluster_result$
 
 ggplot(data = df2, aes(x = Sepal.Length, y = Sepal.Width)) +
   geom_point(aes(colour = as.factor(cluster_result$cluster)))
-#theme(legend.position = "top")
-
