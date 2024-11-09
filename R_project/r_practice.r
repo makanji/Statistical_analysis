@@ -3,7 +3,8 @@ library("ggplot2")
 plantData <- read.table(file = "plantData.csv", header = T, sep =",", dec = "." )
 summary(plantdata)
 
-#x[which(!is.na(x))]     
+#x[which(!is.na(x))]
+#x[which(!is.na(x))]
 mean(x[which(!is.na(x))])
 is.na(plantdata$Sepal.Length)
 
@@ -125,5 +126,6 @@ cluster_result$
 ######################################################
 #plotting the cluster analysis using GGplot
 
-ggplot(data = df2, aes(x = Sepal.Length, y = Sepal.Width)) +
+ggplot(data = df2, aes(x = Sepal.Length, y = Sepal.Width)) 
+
   geom_point(aes(colour = as.factor(cluster_result$cluster)))
