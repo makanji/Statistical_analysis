@@ -124,7 +124,7 @@ class(cluster_result$cluster)
 cluster_result$
 
 ######################################################
-#plotting the cluster analysis using GGplot
+#plotting the cluster analysis using GGplot to display result
 
 ggplot(data = df2, aes(x = Sepal.Length, y = Sepal.Width)) 
 
