@@ -107,7 +107,7 @@ normalize <- function(x){
 for (i in 1:ncol(df2)){
   df2[,i] <- normalize(df2[, i]) 
 }
-
+#using 3 clusters
 cluster_result <- kmeans(df2, centers = 3)
 
 cluster_result$size
